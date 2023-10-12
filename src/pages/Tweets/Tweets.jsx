@@ -6,7 +6,8 @@ import { Button } from "./Tweets.styled";
 export const Tweets = () => {
   //  const [loading, setLoading] = useState(false);
     const location = useLocation();
-     const BackLink=useRef(location.state?.from ?? '/');    
+    const BackLink=useRef(location.state?.from ?? '/');    
+   
     return (
         <div>
               <Link to={BackLink.current}>
