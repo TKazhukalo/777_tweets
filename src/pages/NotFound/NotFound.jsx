@@ -1,9 +1,10 @@
-
+import NotFoundImg from "../../img/not_found.jpg"
+import { NotFoundImage, Section } from "./NotFound.styled"
 
 export const NotFound = () => {
     return (
-        <div>
-            <img src="" alt="" />
-        </div>
+        <Section>
+            <NotFoundImage src={NotFoundImg} alt="NotFound" loading="lazy" />
+        </Section>
     )
 }
