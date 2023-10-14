@@ -1,6 +1,11 @@
 import styled from "styled-components";
 
-export const Button=styled.button` 
+
+export const SectionTweets = styled.section`
+background-color:  #c8a2f0;
+`;
+
+export const Button = styled.button` 
     width: 100px;
     height: 40px;
     border: none;
@@ -18,4 +23,11 @@ export const Button=styled.button`
             background-color: #5CD3A8;
             box-shadow: 0 0 0 1px #5CD3A8, 0 0 10px #333;
         }
-`
+`;
+export const ListTweets = styled.ul`
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  row-gap: 50px;
+`;
