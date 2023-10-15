@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 
 export const SectionTweets = styled.section`
-background-color:  #c8a2f0;
+//background-color:  #c8a2f0;
 `;
 
 export const Button = styled.button` 

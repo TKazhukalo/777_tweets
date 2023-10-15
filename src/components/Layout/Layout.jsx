@@ -1,26 +1,11 @@
 import { Outlet } from "react-router-dom";
 import { Suspense } from "react";
 import { ContainerHeader, ContainerNav, HeaderItem, HeaderItemLink, HeaderList } from "./Layout.styled";
-import { useState } from "react";
+import Loader from "components/Loader/Loader";
 
 export const Layout = () => {
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-    blockScroll();
-  };
-
-  const blockScroll = () => {
-    const bodyEl = document.querySelector('body');
-    const displayWith = window.innerWidth;
-
-    if (displayWith < 768) {
-      bodyEl.classList.toggle('block_scroll');
-    }
-  };
     return <div>
-            <ContainerHeader>
+    <ContainerHeader>
       <ContainerNav>
         <HeaderList>
           <HeaderItem>
@@ -29,11 +14,10 @@ export const Layout = () => {
           <HeaderItem>
             <HeaderItemLink to='/tweets'>Tweets</HeaderItemLink>
           </HeaderItem>
-          </HeaderList>
-        </ContainerNav>
-       
+        </HeaderList>
+      </ContainerNav>
     </ContainerHeader>
-        <Suspense fallback={<div>...Loading</div>}>
+      <Suspense fallback={<Loader />}>
         <Outlet />
       </Suspense>
     </div>

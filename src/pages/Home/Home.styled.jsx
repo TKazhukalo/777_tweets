@@ -16,13 +16,14 @@ export const TextHome = styled.p`
     margin-top: 20px;
     font-size: 26px;
     text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
   
-    color: #b274f5;
-    &:hover{
-         color: #c8a2f0;
-    }
 `
 export const TextHomeLink=styled(Link)`
     text-decoration: none;
-    color: #b274f5;
+    color: #ffffff;
+     &:hover{
+         color: #c8a2f0;
+    }
 `

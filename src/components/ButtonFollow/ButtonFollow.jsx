@@ -1,5 +1,3 @@
-
-import clsx from 'clsx';
 import { getIsLoading } from 'redux/selectors';
 import { useSelector } from 'react-redux';
 import { ButtonBurger } from './ButtonFollow.styled';
@@ -11,6 +9,7 @@ export const FollowButton = ({ isActive, onClick }) => {
       <ButtonBurger
         type="button"
         onClick={onClick}
+        isActive={isActive}
         disabled={isLoading}
       >
         Follow
