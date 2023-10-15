@@ -5,7 +5,7 @@ export const UserListStyled = styled.ul`
     flex-wrap: wrap;
     list-style-type: none;
     margin: 0px auto;
-    max-width: 420px;
+    max-width: 380px;
     padding: 20px;
     gap: 20px;
     align-items: center;

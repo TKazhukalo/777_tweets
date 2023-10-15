@@ -5,7 +5,7 @@ import logo from "../../img/logo.svg";
 export const UserCardContainer = styled.div`
   position: relative;
   width: 380px;
-  height: 460px;
+  height: 283px;
   padding-top: 178px;
   border-radius: 20px;
   background-image: url(${logo}), url(${backgroundImage}),
@@ -50,12 +50,6 @@ export const AvatarImg = styled.img`
   width: 60px;
   height: 60px;
   border-radius: 50%;
-`;
-export const UserName = styled.p`
-  text-align: center;
-  color: #ebd8ff;
-  font-size: 20px;
-  text-transform: uppercase;
 `;
 export const Tweets = styled.p`
   margin-top: 16px;

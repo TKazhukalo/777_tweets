@@ -17,5 +17,5 @@ export const Button = styled.button`
 `;
 export const ArrowCircle = styled(FaArrowCircleLeft)`
   width: 20px;
-  height: 15px;
+  height: 40px;
 `;
